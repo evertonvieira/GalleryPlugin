@@ -1,6 +1,6 @@
 {
   "name": "GalleryPlugin",
-  "main": "GalleryPlugin.js",
+  "main": "dist/js/GalleryPlugin.js",
   "version": "0.0.1",
   "authors": [
     "Everton Vieira <evertonvieira1994@gmail.com>"
