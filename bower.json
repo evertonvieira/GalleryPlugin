@@ -1,0 +1,17 @@
+{
+  "name": "GalleryPlugin",
+  "main": "GalleryPlugin.js",
+  "version": "0.0.1",
+  "authors": [
+    "Everton Vieira <evertonvieira1994@gmail.com>"
+  ],
+  "description": "Galeria de imagens",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
