@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script src="dist/js/GalleryPlugin.js"></script>
+		<link rel="stylesheet" type="text/css" href="dist/css/style.css">
+		<title>Plugin GalleryPlugin</title>
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+
+		<script>
+			$(document).ready(function(){
+				$(".thumbs").GalleryPlugin({
+					'speedFade': 1000,
+					'interval': 5000
+
+				});
+			});
+		</script>
+
+		<div class="container">
+			<h1>Galeria de imagens</h1>
+			<div class="content-thumbs">
+				<ul class="thumbs">
+					<li>
+						<a href="img/large/image-large1.jpg">
+							<img src="img/small/image-small1.jpg" alt="image1-small" />
+						</a>
+					</li>
+					<li>
+						<a href="img/large/image-large2.jpg">
+							<img src="img/small/image-small2.jpg" alt="image2-small" />
+						</a>
+					</li>
+					<li>
+						<a href="img/large/image-large3.jpg">
+							<img src="img/small/image-small3.jpg" alt="image3-small" />
+						</a>
+					</li>
+					<li>
+						<a href="img/large/image-large1.jpg">
+							<img src="img/small/image-small1.jpg" alt="image1-small" />
+						</a>
+					</li>
+					<li>
+						<a href="img/large/image-large2.jpg">
+							<img src="img/small/image-small2.jpg" alt="image2-small" />
+						</a>
+					</li>
+					<li>
+						<a href="img/large/image-large3.jpg">
+							<img src="img/small/image-small3.jpg" alt="image3-small" />
+						</a>
+					</li>
+				</ul>
+
+			</div>
+
+			<div class="content-gallery">
+			</div>
+
+		</div>
+
+	</body>
+</html>
