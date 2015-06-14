@@ -30,7 +30,7 @@
 			}
 		}
 
-		//caso o click exista
+		//caso o hover exista
 		$('li').mouseover(function() {
 
 			if ($(this).attr('class') == "active"){
