@@ -4,42 +4,47 @@
 
 		var defaults = {
 			'delay' : 200,
-			'interval': 3000
+			'interval': 2000,
 		};
 
 		var settings = $.extend( {}, defaults, options );
 
-		setInterval(gallery, settings.interval);
-
 		//defindo class active na primeira li
 		$("li:eq(0)").addClass("active").show();
 
-		initSlide();
+		$('a').click(function() {
+			event.preventDefault();
+		});
+
+		SetImage();
 
 		//adicionano classe dinâmica na li
 		function gallery(){
 			if($("li.active").next().size()){
 				$("li.active").removeClass("active").next().addClass("active");
-				initSlide();
+				SetImage();
 			}else{
 			 $("li.active").removeClass("active");
 				$("li:eq(0)").addClass("active");
-				initSlide();
+				SetImage();
 			}
 		}
 
 		//caso o click exista
-		$('li').click(function() {
-			event.preventDefault();
+		$('li').mouseover(function() {
+
+			if ($(this).attr('class') == "active"){
+				return false;
+			}
 			$("li.active").removeClass("active");
 			$('li').eq($(this).index()).addClass('active');
 			link = $(this).attr('href');
 			alt = $(this).attr('alt');
-			initSlide(link, alt);
+			SetImage(link, alt);
 		});
 
 		//coloca a imagem grande ao lado
-		function initSlide (link, alt) {
+		function SetImage (link, alt) {
 			if (link == undefined){
 				var link = $("li.active a").attr("href");
 			}

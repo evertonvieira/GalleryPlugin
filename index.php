@@ -16,17 +16,14 @@
 		<![endif]-->
 	</head>
 	<body>
-
 		<script>
 			$(document).ready(function(){
 				$(".thumbs").GalleryPlugin({
-					'speedFade': 1000,
-					'interval': 600000
-
+					'delay': 500,
+					'interval': 2000
 				});
 			});
 		</script>
-
 		<div class="container">
 			<h1>Galeria de imagens</h1>
 			<div class="content-thumbs">
@@ -62,13 +59,8 @@
 						</a>
 					</li>
 				</ul>
-
 			</div>
-
-			<div class="content-gallery">
-			</div>
-
+			<div class="content-gallery"></div>
 		</div>
-
 	</body>
 </html>
