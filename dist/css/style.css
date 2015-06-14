@@ -16,7 +16,6 @@ body{
 .content-thumbs{
 	width:28%;
 	float:left;
-	background:#ccc;
 }
 .thumbs{
 	list-style:none;
@@ -24,23 +23,23 @@ body{
 	margin:0px;
 	padding:0px;
 }
+
 .thumbs li{
 	float:left;
 }
 .thumbs li.active{
-	background:#000;
+	background:#f90;
+
 }
 .thumbs li a{
+	padding:5px;
 	float:left;
-	border:1px solid #ccc;
-	padding:2px;
-	float:left;
+	display: inline-flex;
 }
 .content-gallery{
 	float:right;
 	width:72%;
 	max-width:600px;
-	background:#000;
 }
 .selected{
 	max-width:100%;

@@ -21,7 +21,7 @@
 			$(document).ready(function(){
 				$(".thumbs").GalleryPlugin({
 					'speedFade': 1000,
-					'interval': 5000
+					'interval': 600000
 
 				});
 			});
