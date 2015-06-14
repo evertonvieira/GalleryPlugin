@@ -1,6 +1,6 @@
 //Registrando Plugin
 (function($) {
-	$.fn.GalleryPlugin = function(options) {
+	$.fn.SimpleGalleryShow = function(options) {
 
 		var defaults = {
 			'delay' : 200,
